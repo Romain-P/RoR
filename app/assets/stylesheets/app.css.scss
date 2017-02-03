@@ -51,7 +51,7 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
-@import "EA/global";
-@import "EA/topbar";
-@import "EA/content";
-@import "EA/foundation-custom";
+@import "global.css.scss";
+@import "topbar.css.scss";
+@import "content.css.scss";
+@import "foundation-custom.css.scss";

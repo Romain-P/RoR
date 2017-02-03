@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <html>
-  <head>
-    <title>Europe-Arena</title>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <title>Europe-Arena</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <%= csrf_meta_tags %>
+  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag    'app', media: 'all', 'data-turbolinks-track': 'reload' %>
+</head>
 
-    <%= stylesheet_link_tag "app.css" %>
-  </head>
+<body>
+<%= yield %>
 
-  <body>
-    <%= yield %>
-
-    <script src="assets/javascripts/bower_components/jquery/dist/jquery.js"></script>
-    <script src="assets/javascripts/bower_components/what-input/what-input.js"></script>
-    <script src="assets/javascripts/bower_components/foundation-sites/dist/foundation.js"></script>
-    <script src="assets/javascripts/proton-1.0.0.min.js"></script>
-    <script src="assets/javascripts/app.js"></script>
-
-  </body>
+<%= javascript_include_tag 'bower_components/jquery/dist/jquery', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'bower_components/what-input/what-input', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'bower_components/foundation-sites/dist/foundation', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'proton-1.0.0.min', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'app', 'data-turbolinks-track': 'reload' %>
+</body>
 </html>

@@ -17,7 +17,7 @@ $orange2 : #f37021;
 }
 
 body{
-  background : $body-background url(../../images/BG.jpg) top center no-repeat;
+  background : $body-background image-url("BG.jpg") top center no-repeat;
 }
 .glow1{
   @include breakpoint(large up) {
@@ -25,12 +25,12 @@ body{
   }
   position: relative;
   margin : -305px auto 0;
-  background: url(../../images/glow1.png) center center no-repeat;
+  background: image-url("glow1.png") center center no-repeat;
   animation: pulse 4.5s infinite alternate;
 }
 .glow2{
   height: 305px;
-  background: url(../../images/glow2.png) center center no-repeat;
+  background: image-url("glow2.png") center center no-repeat;
   animation: pulse 6.0s infinite alternate;
 }
 #logoflick{
@@ -45,7 +45,7 @@ body{
   height: 178px;
   margin : -245px auto 60px;
 
-  background: url(../../images/logo.png) center center no-repeat;
+  background: image-url("logo.png") center center no-repeat;
 
 }
 
