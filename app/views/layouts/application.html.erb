@@ -1,14 +1,23 @@
 <!DOCTYPE html>
+<html class="no-js" lang="en">
 <html>
   <head>
-    <title>Web</title>
-    <%= csrf_meta_tags %>
+    <title>Europe-Arena</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'app', media: 'all', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
     <%= yield %>
+
+    <%= javascript_include_tag 'bower_components/jquery/dist/jquery', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'bower_components/what-input/what-input', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'bower_components/foundation-sites/dist/foundation', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'proton-1.0.0.min', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'app', 'data-turbolinks-track': 'reload' %>
   </body>
 </html>
