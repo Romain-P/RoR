@@ -1,0 +1,33 @@
+.callout{
+  &.secondary, &.success, &.warning, &.alert{
+      a{
+        color : lighten($orange, 25%);
+      }
+  }
+}
+
+.dropdown.menu{
+  .is-submenu-item.is-dropdown-submenu-item{
+    a:hover{
+      background : transparent;
+    }
+  }
+}
+
+.reveal{
+  h1{
+    background: #2a2929;
+    min-height: 50px;
+    font-size: 16px;
+    padding-left: 20px;
+    color: #cf8020;
+    text-transform: uppercase;
+    line-height: 50px;
+    span{
+      color : #f37021;
+    }
+  }
+  p{
+    padding : $global-padding;
+  }
+}
