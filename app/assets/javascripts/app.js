@@ -1,6 +1,4 @@
-$(function() {
-    $(document).foundation();
-});
+
 var proton;
 var renderer;
 var stats;
