@@ -6,7 +6,7 @@ var canvas;
 
 Main();
 function Main() {
-    canvas = $(document).getElementById("logoflick");
+    canvas = document.getElementById("logoflick");
     canvas.width = $('#logoflick').parent().width();
     canvas.height = 305;
 
