@@ -1,17 +1,12 @@
 $(document).foundation();
 
-//= require jquery
-//= require jquery_ujs
-//= require turbolinks
 var proton;
 var renderer;
-var stats;
 var canvas;
-var context;
 
 Main();
 function Main() {
-    canvas = document.getElementById("logoflick");
+    canvas = $(document).getElementById("logoflick");
     canvas.width = $('#logoflick').parent().width();
     canvas.height = 305;
 
