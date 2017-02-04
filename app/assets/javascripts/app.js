@@ -1,6 +1,8 @@
 $(document).foundation();
 
-
+//= require jquery
+//= require jquery_ujs
+//= require turbolinks
 var proton;
 var renderer;
 var stats;
