@@ -5,7 +5,7 @@
     <title><%= content_for?(:title) ? yield(:title) : "Europe-Arena" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Europe-Arena" %>">
 
-    <%= javascript_include_tag 'proton-1.0.0.min', 'data-turbolinks-track' => 'reload' %>
+    <%= javascript_include_tag 'proton-1.0.0.min.js', 'data-turbolinks-track' => 'reload' %>
     <%= stylesheet_link_tag 'app', media: 'all', 'data-turbolinks-track' => 'reload' %>
     <%= javascript_include_tag 'vendor/modernizr' %>
     <%= javascript_include_tag 'app', 'data-turbolinks-track': 'reload' %>
