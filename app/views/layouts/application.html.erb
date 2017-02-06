@@ -16,7 +16,13 @@
         <% if alert %>
           <p class="alert alert-danger"><%= alert %></p>
         <% end %>
-        <%= yield %>
+        <%= render 'layouts/logo' %>
+        <%= render 'layouts/navigation' %>
+        <div class="row content">
+          <%= yield %>
+          <%= render 'layouts/stats' %>
+        </div>
+        <%= render 'layouts/realmlist' %>
         <%= javascript_include_tag 'vendor/modernizr' %>
         <%= javascript_include_tag 'proton', 'data-turbolinks-track' => 'reload' %>
         <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>

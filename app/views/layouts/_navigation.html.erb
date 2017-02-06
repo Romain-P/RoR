@@ -1,12 +1,19 @@
-<%# navigation styled for Zurb Foundation 5 %>
-<nav class="top-bar" data-topbar>
-  <ul class="title-area">
-    <li class="name"><%= link_to 'Home', root_path %></li>
-    <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
-  </ul>
-  <div class="top-bar-section">
-    <ul>
-      <%= render 'layouts/navigation_links' %>
+<div class="topbar fixed">
+  <div class="large-12 columns">
+    <ul class="dropdown menu" data-dropdown-menu>
+      <% if user_signed_in? %>
+          <li><%= link_to "Account", edit_user_registration_path, :class => 'navbar-link' %></li>
+          <li><a href="#">Download</a></li>
+          <li><a href="#">Forums</a></li>
+          <li><a href="#">Armory</a></li>
+          <li><%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></li>
+      <% else %>
+          <li><%= link_to "Create Account", new_user_registration_path, :class => 'navbar-link'  %></li>
+          <li><a href="#">Download</a></li>
+          <li><a href="#">Forums</a></li>
+          <li><a href="#">Armory</a></li>
+          <li><%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %></li>
+      <% end %>
     </ul>
   </div>
-</nav>
+</div>

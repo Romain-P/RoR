@@ -1,188 +1,129 @@
-<div class="topbar fixed">
-  <div class="large-12 columns">
-    <ul class="dropdown menu" data-dropdown-menu>
-      <% if user_signed_in? %>
-          <li><%= link_to "Edit profile", edit_user_registration_path, :class => 'navbar-link' %></li>
-          <li><%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></li>
-      <% else %>
-          <li><%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %></li>
-          <li><%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %></li>
-      <% end %>
-      <li><a href="#">Download</a></li>
-      <li><a href="#">Forums</a></li>
-      <li><a href="#">Armory</a></li>
-    </ul>
-  </div>
-</div>
-<div class="row">
-  <div class="small-12 columns">
-    <canvas id="logoflick"></canvas>
-    <div class="glow1">
-      <div class="glow2">
-      </div>
-    </div>
-    <div class="logo"></div>
-
-  </div>
-</div>
-<div class="row content">
-  <div class="large-9 columns left">
-    <h1>Welcome On THE <span>EuropE Arena server</span></h1>
-    <div class="row">
-      <div class="large-12 columns">
-        <ul class="dropdown menu" data-dropdown-menu>
-          <li class="selected">
-            <a href="#">News</a>
-          </li>
-          <li><a href="#">Stream</a></li>
-          <li><a href="#">devblog</a></li>
-          <li><a href="#">changelog</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="row container">
-      <div class="small-12 columns">
-        <div class="row news">
-          <div class="small-12 columns">
-            <div class="row title">
-              <div class="medium-9 columns"><h3>SCHEDULED MAINTENANCE</h3></div>
-              <div class="medium-3 columns"><p>July 27, 2016</p></div>
-            </div>
-            <div class="row text">
-              <p>We have detected unusual activity on a minor volume of accounts and in order to prevent unauthorized
-                access we have locked these accounts and issued an enforced password change. Additional information
-                can be found here. Security settings can be found <a href="">here</a>.</p>
-            </div>
-            <div class="separator"></div>
-          </div>
-        </div>
-        <div class="row news">
-          <div class="small-12 columns">
-            <div class="row title">
-              <div class="medium-9 columns"><h3>SCHEDULED MAINTENANCE</h3></div>
-              <div class="medium-3 columns"><p>July 27, 2016</p></div>
-            </div>
-            <div class="row text">
-              <p>We have detected unusual activity on a minor volume of accounts and in order to prevent unauthorized
-                access we have locked these accounts and issued an enforced password change. Additional information
-                can be found here. Security settings can be found <a href="">here</a>.</p>
-            </div>
-            <div class="separator"></div>
-          </div>
-        </div>
-        <div class="row news">
-          <div class="small-12 columns">
-            <div class="row title">
-              <div class="medium-9 columns"><h3>SCHEDULED MAINTENANCE</h3></div>
-              <div class="medium-3 columns"><p>July 27, 2016</p></div>
-            </div>
-            <div class="row text">
-              <p>We have detected unusual activity on a minor volume of accounts and in order to prevent unauthorized
-                access we have locked these accounts and issued an enforced password change. Additional information
-                can be found here. Security settings can be found <a href="">here</a>.</p>
-            </div>
-            <div class="separator"></div>
-          </div>
-        </div>
-        <div class="row news">
-          <div class="small-12 columns">
-            <div class="row title">
-              <div class="medium-9 columns"><h3>SCHEDULED MAINTENANCE</h3></div>
-              <div class="medium-3 columns"><p>July 27, 2016</p></div>
-            </div>
-            <div class="row text">
-              <p>We have detected unusual activity on a minor volume of accounts and in order to prevent unauthorized
-                access we have locked these accounts and issued an enforced password change. Additional information
-                can be found here. Security settings can be found <a href="">here</a>.</p>
-            </div>
-            <div class="separator"></div>
-          </div>
-        </div>
-        <div class="row news">
-          <div class="small-12 columns">
-            <div class="row title">
-              <div class="medium-9 columns"><h3>SCHEDULED MAINTENANCE</h3></div>
-              <div class="medium-3 columns"><p>July 27, 2016</p></div>
-            </div>
-            <div class="row text">
-              <p>We have detected unusual activity on a minor volume of accounts and in order to prevent unauthorized
-                access we have locked these accounts and issued an enforced password change. Additional information
-                can be found here. Security settings can be found <a href="">here</a>.</p>
-            </div>
-            <div class="separator"></div>
-          </div>
-        </div>
-        <div class="row news">
-          <div class="small-12 columns">
-            <div class="row title">
-              <div class="medium-9 columns"><h3>SCHEDULED MAINTENANCE</h3></div>
-              <div class="medium-3 columns"><p>July 27, 2016</p></div>
-            </div>
-            <div class="row text">
-              <p>We have detected unusual activity on a minor volume of accounts and in order to prevent unauthorized
-                access we have locked these accounts and issued an enforced password change. Additional information
-                can be found here. Security settings can be found <a href="">here</a>.</p>
-            </div>
-            <div class="separator"></div>
-          </div>
-        </div>
-        <div class="row news">
-          <div class="small-12 columns">
-            <div class="row title">
-              <div class="medium-9 columns"><h3>SCHEDULED MAINTENANCE</h3></div>
-              <div class="medium-3 columns"><p>July 27, 2016</p></div>
-            </div>
-            <div class="row text">
-              <p>We have detected unusual activity on a minor volume of accounts and in order to prevent unauthorized
-                access we have locked these accounts and issued an enforced password change. Additional information
-                can be found here. Security settings can be found <a href="">here</a>.</p>
-            </div>
-            <div class="separator"></div>
-          </div>
-        </div>
-        <div class="row news">
-          <div class="small-12 columns">
-            <div class="row title">
-              <div class="medium-9 columns"><h3>SCHEDULED MAINTENANCE</h3></div>
-              <div class="medium-3 columns"><p>July 27, 2016</p></div>
-            </div>
-            <div class="row text">
-              <p>We have detected unusual activity on a minor volume of accounts and in order to prevent unauthorized
-                access we have locked these accounts and issued an enforced password change. Additional information
-                can be found here. Security settings can be found <a href="">here</a>.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+<div class="large-9 columns left">
+  <h1>Welcome On THE <span>Europe Arena server</span></h1>
+  <div class="row">
+    <div class="large-12 columns">
+      <ul class="dropdown menu" data-dropdown-menu>
+        <li class="selected">
+          <a href="#">News</a>
+        </li>
+        <li><a href="#">Stream</a></li>
+        <li><a href="#">devblog</a></li>
+        <li><a href="#">changelog</a></li>
+      </ul>
     </div>
   </div>
-  <div class="large-3 columns right">
-    <div class="row element">
-      <div class="large-12 columns">
-        <h2>Server <span>Infos</span></h2>
-        <table>
-          <tr>
-            <td>Server : </td>
-            <td class="blue">Online</td>
-          </tr>
-          <tr>
-            <td>Version : </td>
-            <td class="red">3.3.5a</td>
-          </tr>
-          <tr>
-            <td>Online players : </td>
-            <td class="orange">3785</td>
-          </tr>
-        </table>
+  <div class="row container">
+    <div class="small-12 columns">
+      <div class="row news">
+        <div class="small-12 columns">
+          <div class="row title">
+            <div class="medium-9 columns"><h3>SCHEDULED MAINTENANCE</h3></div>
+            <div class="medium-3 columns"><p>July 27, 2016</p></div>
+          </div>
+          <div class="row text">
+            <p>We have detected unusual activity on a minor volume of accounts and in order to prevent unauthorized
+              access we have locked these accounts and issued an enforced password change. Additional information
+              can be found here. Security settings can be found <a href="">here</a>.</p>
+          </div>
+          <div class="separator"></div>
+        </div>
       </div>
-    </div>
-    <div class="row element">
-      <div class="large-12 columns">
-        <h2>Realm<span>List</span></h2>
-        <table>
-          <tr>
-            <td class="orange2 text-center realmlist">set realmlist logon.europe-arena.com</td>
-        </table>
+      <div class="row news">
+        <div class="small-12 columns">
+          <div class="row title">
+            <div class="medium-9 columns"><h3>SCHEDULED MAINTENANCE</h3></div>
+            <div class="medium-3 columns"><p>July 27, 2016</p></div>
+          </div>
+          <div class="row text">
+            <p>We have detected unusual activity on a minor volume of accounts and in order to prevent unauthorized
+              access we have locked these accounts and issued an enforced password change. Additional information
+              can be found here. Security settings can be found <a href="">here</a>.</p>
+          </div>
+          <div class="separator"></div>
+        </div>
+      </div>
+      <div class="row news">
+        <div class="small-12 columns">
+          <div class="row title">
+            <div class="medium-9 columns"><h3>SCHEDULED MAINTENANCE</h3></div>
+            <div class="medium-3 columns"><p>July 27, 2016</p></div>
+          </div>
+          <div class="row text">
+            <p>We have detected unusual activity on a minor volume of accounts and in order to prevent unauthorized
+              access we have locked these accounts and issued an enforced password change. Additional information
+              can be found here. Security settings can be found <a href="">here</a>.</p>
+          </div>
+          <div class="separator"></div>
+        </div>
+      </div>
+      <div class="row news">
+        <div class="small-12 columns">
+          <div class="row title">
+            <div class="medium-9 columns"><h3>SCHEDULED MAINTENANCE</h3></div>
+            <div class="medium-3 columns"><p>July 27, 2016</p></div>
+          </div>
+          <div class="row text">
+            <p>We have detected unusual activity on a minor volume of accounts and in order to prevent unauthorized
+              access we have locked these accounts and issued an enforced password change. Additional information
+              can be found here. Security settings can be found <a href="">here</a>.</p>
+          </div>
+          <div class="separator"></div>
+        </div>
+      </div>
+      <div class="row news">
+        <div class="small-12 columns">
+          <div class="row title">
+            <div class="medium-9 columns"><h3>SCHEDULED MAINTENANCE</h3></div>
+            <div class="medium-3 columns"><p>July 27, 2016</p></div>
+          </div>
+          <div class="row text">
+            <p>We have detected unusual activity on a minor volume of accounts and in order to prevent unauthorized
+              access we have locked these accounts and issued an enforced password change. Additional information
+              can be found here. Security settings can be found <a href="">here</a>.</p>
+          </div>
+          <div class="separator"></div>
+        </div>
+      </div>
+      <div class="row news">
+        <div class="small-12 columns">
+          <div class="row title">
+            <div class="medium-9 columns"><h3>SCHEDULED MAINTENANCE</h3></div>
+            <div class="medium-3 columns"><p>July 27, 2016</p></div>
+          </div>
+          <div class="row text">
+            <p>We have detected unusual activity on a minor volume of accounts and in order to prevent unauthorized
+              access we have locked these accounts and issued an enforced password change. Additional information
+              can be found here. Security settings can be found <a href="">here</a>.</p>
+          </div>
+          <div class="separator"></div>
+        </div>
+      </div>
+      <div class="row news">
+        <div class="small-12 columns">
+          <div class="row title">
+            <div class="medium-9 columns"><h3>SCHEDULED MAINTENANCE</h3></div>
+            <div class="medium-3 columns"><p>July 27, 2016</p></div>
+          </div>
+          <div class="row text">
+            <p>We have detected unusual activity on a minor volume of accounts and in order to prevent unauthorized
+              access we have locked these accounts and issued an enforced password change. Additional information
+              can be found here. Security settings can be found <a href="">here</a>.</p>
+          </div>
+          <div class="separator"></div>
+        </div>
+      </div>
+      <div class="row news">
+        <div class="small-12 columns">
+          <div class="row title">
+            <div class="medium-9 columns"><h3>SCHEDULED MAINTENANCE</h3></div>
+            <div class="medium-3 columns"><p>July 27, 2016</p></div>
+          </div>
+          <div class="row text">
+            <p>We have detected unusual activity on a minor volume of accounts and in order to prevent unauthorized
+              access we have locked these accounts and issued an enforced password change. Additional information
+              can be found here. Security settings can be found <a href="">here</a>.</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
