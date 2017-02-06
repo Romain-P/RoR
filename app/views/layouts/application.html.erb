@@ -10,9 +10,15 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
-       <%= yield %>
-       <%= javascript_include_tag 'vendor/modernizr' %>
-       <%= javascript_include_tag 'proton', 'data-turbolinks-track' => 'reload' %>
-       <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
+        <% if notice %>
+            <p class="alert alert-success"><%= notice %></p>
+        <% end %>
+        <% if alert %>
+          <p class="alert alert-danger"><%= alert %></p>
+        <% end %>
+        <%= yield %>
+        <%= javascript_include_tag 'vendor/modernizr' %>
+        <%= javascript_include_tag 'proton', 'data-turbolinks-track' => 'reload' %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
   </body>
 </html>
